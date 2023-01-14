@@ -73,7 +73,7 @@ void setup()
   // Pour i allant de 0 à la longueur des sprites, en incrémentant i.
   for (i=0; i<sprites.length; i++) 
   {
-    x = i%nbimages*W; x
+    x = i%nbimages*W;
     y = i/nbimages*H;
     // On donne à "sprites" les propriétés de la variable image "course".
     sprites[i] = course.get(x, y, W, H); 

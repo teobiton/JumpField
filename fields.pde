@@ -10,6 +10,6 @@ void champs() {
 
   if (xchamps <= -218) { 
     //Fonction pour afficher le défilement des champs.
-    xchamps = 0; x
+    xchamps = 0;
   }
 }
