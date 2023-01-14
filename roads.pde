@@ -1,4 +1,5 @@
-void route() { //Fonction pour afficher le défilement de la route.
+// Fonction pour afficher le défilement de la route.
+void route() { 
 
   image(route, xroute, 524);
   image(route, xroute+218, 524);
@@ -8,6 +9,7 @@ void route() { //Fonction pour afficher le défilement de la route.
   image(route, xroute+1090, 524);
 
   if (xroute <= -218) {
-    xroute = 0; //On remet l'image à droite quand elle n'apparaît plus sur la fenêtre de jeu.
+    // On remet l'image à droite quand elle n'apparaît plus sur la fenêtre de jeu.
+    xroute = 0; 
   }
 }

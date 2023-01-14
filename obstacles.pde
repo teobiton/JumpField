@@ -14,9 +14,11 @@ void obstacle() {
     }
   }
 
-
   image(Obstacle1, xobstacle, 530, 80, 60);
-  if ( xobstacle <=- 20 ) { //Si l'obstacle n'apparaît plus sur la fenêtre de jeu, on affecte à "obsacle" un nombre aléatoire entre 1 et 2, et on le replace entre 1000 et 2000.
+  // Si l'obstacle n'apparaît plus sur la fenêtre de jeu, 
+  // on affecte à "obstacle" un nombre aléatoire entre 1 et 2, 
+  // et on le replace entre 1000 et 2000.
+  if ( xobstacle <=- 20 ) { 
     xobstacle = random(1000, 1200);
     obstacle = random(1, 2);
   }

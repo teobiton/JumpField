@@ -1,11 +1,16 @@
 void paliers() {
 
-  if (score <= 500) { //On teste le score à chaque palier de 500.
-    //On définit la vitesse de défilement de l'obstable, de la route et des champs, ainsi que la couleur du ciel en fonction du score.
+  // On teste le score à chaque palier de 500.
+  if (score <= 500) { 
+    // On définit la vitesse de défilement de l'obstable, 
+    //de la route et des champs, 
+    //ainsi que la couleur du ciel en fonction du score.
     xobstacle = xobstacle-25;
     xroute = xroute-25;
     xchamps = xchamps-3 ;
-    background(115, 215, 253); //On définit la couleur de fond, ces valeurs correspondent au bleu.
+
+    // On définit la couleur de fond, ces valeurs correspondent au bleu.
+    background(115, 215, 253); 
   }
 
   if (score >= 500) {
@@ -42,5 +47,6 @@ void paliers() {
     background(9, 57, 117);
   } 
 
-  score = score+1; //On incrémente le score.
+  // On incrémente le score.
+  score = score+1; 
 }

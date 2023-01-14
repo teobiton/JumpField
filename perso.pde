@@ -1,30 +1,40 @@
 void perso() {
 
-  image(sprites[frameCount%sprites.length], 250, ypers); //On affiche le défilement du spritesheet du personnage.
-
-
-  if (etatclavier == 1) { //On regarde si une touche est activée d'après la boucle "keyPressed".
+  // On affiche le défilement du spritesheet du personnage.
+  image(sprites[frameCount%sprites.length], 250, ypers); 
   
-    if (ypers != 375) { //Si le personnage n'a pas encore atteint une hauteur de 375.
-    
-      ypers = ypers-20; //Il saute.
+  // On regarde si une touche est activée d'après la boucle "keyPressed".
+  if (etatclavier == 1) { 
+  
+    //Si le personnage n'a pas encore atteint une hauteur de 375.
+    if (ypers != 375) { 
+      
+      //Il saute.
+      ypers = ypers-20; 
     }
     
-    if ( ypers ==375) { //Quand le pers atteint 375.
-    
-      etatclavier =2; //On valide le "si" suivant pour faire redescendre le pers.
+    //Quand le pers atteint 375.
+    if ( ypers ==375) { 
+      
+      // On valide le "si" suivant pour faire redescendre le pers.
+      etatclavier =2; 
     }
   }
   
-  if (etatclavier == 2) { //S'il a atteint sa hauteur maximale.
+  // S'il a atteint sa hauteur maximale.
+  if (etatclavier == 2) { 
     
-    if (ypers != 515){ //Et s'il n'est pas arrivé au sol.
-    
-      ypers = ypers+20; //Il redescend.
+    // Et s'il n'est pas arrivé au sol.
+    if (ypers != 515){ 
       
-      if ( ypers ==515) { //S'il est atteri sur le sol.
+      // Il redescend.
+      ypers = ypers+20;
       
-        etatclavier = 0; //On fait en sorte que la boucle s'arrête.
+      // S'il est atteri sur le sol.
+      if ( ypers ==515) { 
+        
+        // On fait en sorte que la boucle s'arrête.
+        etatclavier = 0; 
       }
     }
   }
